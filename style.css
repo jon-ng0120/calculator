@@ -25,6 +25,7 @@
     width: 100%;
     height: 100%;
     border: 1px solid black;
+    text-align: right;
 }
 
 .input-container {
@@ -46,4 +47,9 @@
 
 .equals {
     grid-area: 3 / 5 / span 2/ span 1;
+}
+
+
+.btns-active {
+    background: blue;
 }
