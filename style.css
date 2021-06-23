@@ -6,16 +6,19 @@
 .main-container {
     margin: auto;
     width: 30rem;
-    background: blue;
 }
 
 .calc-container {
-    margin: auto;
+    margin: 5rem auto;
     width: 100%;
+    background-color: rgb(192, 192, 192);
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 5%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
 .display-container {
-    height: 5rem;
+    height: 7rem;
     display: flex;
     flex-direction: column;
 }
@@ -24,32 +27,60 @@
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
     text-align: right;
+    border: none;
 }
 
 .input-container {
     height: 40%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.input-container input {
+    font-size: 1.8rem;
+    padding: 0 0.7rem;
 }
 
 .results-container {
     height: 60%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.results-container input {
+    font-size: 3rem;
+    padding: 0 0.7rem;
 }
 
 .btns-container {
-    background: red;
+    margin-top: 1.4rem;
     display: grid;
+    gap: 0.7rem;
 }
 
 .btns-container button {
-    padding: 2rem 0;
+    padding: 2.8rem 1rem;
+    border-radius: 5%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btns-container button:hover {
+    background-color: rgb(228, 228, 228);
 }
 
 .equals {
     grid-area: 3 / 5 / span 2/ span 1;
+    background-color: rgb(250, 192, 84);
 }
 
+.clear {
+    background-color: rgb(255, 159, 123);
+}
 
-.btns-active {
-    background: blue;
+.delete {
+    background-color: rgb(255, 159, 123);
 }
